@@ -6,13 +6,13 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:03:03 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/24 15:44:15 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/24 17:33:59 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
-#include "libft.h"
+#include <libft.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -28,4 +28,3 @@ void	*ft_memset(void *b, int c, size_t len)
     }
     return b;
 }
-

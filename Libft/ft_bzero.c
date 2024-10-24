@@ -6,7 +6,13 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:54:13 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/24 15:54:29 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/24 16:26:33 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+void    bzero(void *s, size_t n)
+{
+    while(n-- > 0)
+        *(unsigned char *)(s) = 0;
+}
