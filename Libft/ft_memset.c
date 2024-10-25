@@ -6,26 +6,24 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:03:03 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/24 18:17:41 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/25 16:42:36 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <string.h>
-#include <stdio.h>
-#include <libft.h>
-
 void	*ft_memset(void *b, int c, size_t len)
 {
-    size_t i = 0;
-    unsigned char *ptr;
-
-    if(!b)
-        return (NULL);
+    size_t i;
+    unsigned char	*ptr;
+    if(b == NULL)
+        return(NULL);
+    i = 0;
     ptr = (unsigned char *)b;
     while(i < len)
     {
         ptr[i] = (unsigned char)c;
         i++;
     }
-    return b;
+    return (b);
 }

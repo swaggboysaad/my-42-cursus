@@ -12,48 +12,28 @@
 
 #include "libft.h"
 
-void *ft_memmove(void *dst, const void *src, size_t len)
-{
-    size_t i;
+#include <stddef.h>
 
-    if (dst == src || len == 0)
-        return dst;
-
-    if (dst < src) // Non-overlapping case
-    {
-        i = 0;
-        while (i < len)
-        {
-            *(unsigned char *)(dst + i) = *(unsigned char *)(src + i);
-            i++;
-        }
+void *ft_memmove(void *dest, const void *src, size_t n) {
+    if (!dest || !src) {
+        return NULL;
     }
-    else 
-    {
-        i = len;
-        while (i > 0)
-        {
-            i--;
-            *(unsigned char *)(dst + i) = *(unsigned char *)(src + i);
+
+    unsigned char *d = (unsigned char *)dest;
+    const unsigned char *s = (const unsigned char *)src;
+
+    if (d < s) {
+        while (n--) {
+            *d++ = *s++;
+        }
+    } else {
+        
+        d += n; 
+        s += n; 
+        while (n--) {
+            *(--d) = *(--s); 
         }
     }
 
-    return dst;
-}
-int main() {
-    char src_non_overlap[] = "abcdef";
-    char dst_non_overlap[10];
-
-    char src_overlap[] = "1234567890";
-    char dst_overlap[15];
-
-    // Non-overlapping test
-    ft_memmove(dst_non_overlap, src_non_overlap, 6); // Copy "abcdef" to dst_non_overlap
-    printf("Non-overlapping memmove: %s\n", dst_non_overlap); // Expected: "abcdef"
-
-    // Overlapping test
-    ft_memmove(src_overlap + 2, src_overlap, 8); // Move "12345678" within the same array
-    printf("Overlapping memmove: %s\n", src_overlap); // Expected: "1212345678"
-
-    return 0;
+    return dest;
 }

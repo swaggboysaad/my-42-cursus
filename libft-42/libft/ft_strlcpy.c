@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/25 16:06:17 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/25 18:59:57 by szaoual          ###   ########.fr       */
+/*   Created: 2022/09/13 14:28:03 by tchevrie          #+#    #+#             */
+/*   Updated: 2024/10/25 18:37:44 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-    size_t	i;
+	size_t	i;
 
 	if (!dst || !src)
 		return (0);
@@ -31,7 +31,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		dst[i] = src[i];
 		i++;
 	}
-    dst[i] = '\0';
-	
+
+	dst[i] = '\0'; 
+
 	return (ft_strlen(src)); 
 }
+

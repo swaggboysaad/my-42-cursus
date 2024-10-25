@@ -1,5 +1,6 @@
 LIBC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
-		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c 
+		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c\
+		
 
 SRCS = ${LIBC} ${ADDITIONAL}
 
@@ -9,7 +10,7 @@ OBJS = ${SRCS:.c=.o}
 
 OBJSALL = ${SRCSALL:.c=.o} 
 
-LIB = libft.a
+NAME = libft.a
 
 CC = gcc
 
@@ -18,19 +19,19 @@ CFLAGS = -Wall -Werror -Wextra -I ./
 .c.o:
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
-${LIB}:	${OBJS}
-		ar -rsc ${LIB} ${OBJS}
+${NAME}:	${OBJS}
+		ar -rsc ${NAME} ${OBJS}
 
 bonus:	${OBJSALL}
-		ar -rsc ${LIB} ${OBJSALL}
+		ar -rsc ${NAME} ${OBJSALL}
 
-all: 	${LIB}
+all: 	${NAME}
 
 clean:	
 		rm -f ${OBJSALL}
 
 fclean:	clean;
-		rm -f ${LIB}
+		rm -f ${NAME}
 
 re:	fclean all
 

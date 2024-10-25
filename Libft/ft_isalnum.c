@@ -6,21 +6,15 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:53:10 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/24 15:01:59 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/25 14:38:11 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 int ft_isalnum(int c)
 {
     if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
 		return (1);
 	else
 		return (0);
-}
-int main()
-{
-    int c = '0';
-    printf("%i",ft_isalnum(c));
 }
