@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:20:37 by tchevrie          #+#    #+#             */
-/*   Updated: 2024/10/25 11:44:56 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/25 21:27:06 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t	i;
 	unsigned char	*ptr;
 
-	if (!b)
-		return (NULL);
+	//if (!b)
+	//	return (NULL);
 	i = 0;
 	ptr = (unsigned char *)b;
 	while (i < len)
@@ -29,17 +29,12 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-int main() {
-    char buffer[11];  // 10 characters + 1 for the null terminator
-
-    // Use ft_memset to fill the buffer with '*'
-    ft_memset(buffer, '*', 10);
-
-    // Null-terminate the string
-    buffer[10] = '\0';
-
-    // Print the result
-    printf("Buffer after memset: %s\n", buffer);  // Output: **********
-    
-    return 0;
+/*
+int main()
+{
+	char b[] = "123456789";
+	int c = 'X';
+	printf("MY FUNCTION: %s\n",ft_memset(((void *)0), 'a', 12));
+	printf("C: %s\n",memset(((void *)0), 'a', 12));
 }
+*/
