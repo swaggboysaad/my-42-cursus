@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 16:06:17 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/25 21:25:30 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/26 13:26:24 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		return (ft_strlen(src));
 
 	
-	while (src[i]&& i < dstsize - 1) // 
+	while (src[i]&& i < dstsize - 1)
 	{
 		dst[i] = src[i];
 		i++;
