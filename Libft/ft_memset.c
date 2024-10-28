@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:03:03 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/25 21:27:15 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/28 08:53:39 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-/*
-int main()
-{
-	char b[] = "123456789";
-	int c = 'X';
-	printf("MY FUNCTION: %s\n",ft_memset(((void *)0), 'a', 12));
-	printf("C: %s\n",memset(((void *)0), 'a', 12));
-}
-*/
