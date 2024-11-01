@@ -6,14 +6,15 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 15:25:18 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/23 15:25:18 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/31 21:45:26 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-int ft_isdigit(int c)
+
+int	ft_isdigit(int c)
 {
 	if ((c >= '0' && c <= '9'))
 		return (1);
 	else
-	return (0);
+		return (0);
 }

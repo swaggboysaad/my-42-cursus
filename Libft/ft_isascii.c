@@ -6,13 +6,14 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:26:10 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/23 16:26:10 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/31 21:51:39 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-int ft_isascii(int c)
+
+int	ft_isascii(int c)
 {
-    if (c >= 0 && c <= 127)
+	if (c >= 0 && c <= 127)
 		return (1);
 	return (0);
 }

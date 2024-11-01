@@ -6,11 +6,12 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:30:34 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/23 16:30:34 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/10/31 21:58:01 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-int ft_isprint(int c)
+
+int	ft_isprint(int c)
 {
-    return (c >= 32 && c <= 126);
+	return (c >= 32 && c <= 126);
 }

@@ -12,9 +12,14 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+# include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
+
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h> 
+# include <stdint.h>
 
 int ft_isalpha(int c);
 int ft_isdigit(int c);
@@ -42,6 +47,10 @@ char	*ft_strdup(const char *s1);
 char *ft_substr(char const *s, unsigned int start,size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
+char **ft_split(const char *s, char c);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char *ft_itoa(int n);
 void    ft_putchar_fd(char c,int fd);
 void ft_putstr_fd(char *s, int fd);
 void ft_putendl_fd(char *s, int fd);
