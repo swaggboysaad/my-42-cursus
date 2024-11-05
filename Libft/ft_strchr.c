@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 13:48:41 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/28 13:33:32 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/11/05 15:21:00 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 {
 	while ((char)c != *s)
 	{
-		if(!*s)
+		if (!*s)
 			return (0);
 		s++;
 	}
