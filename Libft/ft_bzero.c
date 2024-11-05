@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:45:14 by tchevrie          #+#    #+#             */
-/*   Updated: 2024/11/02 20:54:01 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/11/04 20:19:39 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*ptr;
 
 	i = 0;
+	ptr = (unsigned char *)s;
 	while (i < n)
 	{
-		*(unsigned char *)(s + i) = 0;
+		ptr[i] = 0;
 		i++;
 	}
 }

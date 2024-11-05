@@ -6,15 +6,14 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 13:31:07 by szaoual           #+#    #+#             */
-/*   Updated: 2024/10/26 13:33:08 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/11/04 20:05:16 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int ft_tolower(int c) {
-    if (c >= 'A' && c <= 'Z') {
+    if (c >= 'A' && c <= 'Z')
         return c + 32;
-    }
     return c;
 }
