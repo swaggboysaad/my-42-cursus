@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tchevrie <tchevrie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 12:53:43 by tchevrie          #+#    #+#             */
-/*   Updated: 2022/11/08 18:20:30 by tchevrie         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:39:40 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,4 @@ void	*ft_calloc(size_t count, size_t size)
 	if (size != 0 && count > ((size_t) -1 / size))
 		return (NULL);
 	return (ft_memalloc(count * size));
-}
+}	
