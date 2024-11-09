@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:03:03 by szaoual           #+#    #+#             */
-/*   Updated: 2024/11/04 20:17:41 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/11/09 15:09:09 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	ptr = (unsigned char *)b;
 	while (i < len)
 	{
-		ptr[i] = (unsigned char)c;
+		ptr[i] = c;
 		i++;
 	}
 	return (b);

@@ -1,20 +1,16 @@
-LIBC =  ft_bzero.c ft_isalnum.c ft_isalpha.c\
-        ft_isascii.c ft_isdigit.c ft_isprint.c ft_memchr.c \
-        ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c \
-        ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncmp.c \
-        ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c ft_atoi.c
-SRCS = ${LIBC} ${ADDITIONAL}
+LIBC =  ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
+		ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c \
+        ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncmp.c ft_strnstr.c ft_strrchr.c \
+		ft_tolower.c ft_toupper.c ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c \
+		ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c
 
-OBJS = ${SRCS:.c=.o}
+OBJS = ${LIBC:.c=.o}
 
 NAME = libft.a
 
-CC = gcc
+CC = cc
 
-CFLAGS = -Wall -Werror -Wextra
-
-.c.o:
-	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+CFLAGS = -Wall -Wextra -Werror
 
 ${NAME}: ${OBJS}
 	ar rcs ${NAME} ${OBJS}
@@ -22,10 +18,10 @@ ${NAME}: ${OBJS}
 all: ${NAME}
 
 clean:
-	rm -f ${OBJS}
+	rm -rf ${OBJS}
 
 fclean: clean
-	rm -f ${NAME}
+	rm -rf ${NAME}
 
 re: fclean all
 
