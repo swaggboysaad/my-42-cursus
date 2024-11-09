@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 16:06:17 by szaoual           #+#    #+#             */
-/*   Updated: 2024/11/05 10:02:11 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/11/09 12:08:45 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
-	if (!dst || !src)
-		return (0);
 	i = 0;
 	if (dstsize == 0)
 		return (ft_strlen(src));
