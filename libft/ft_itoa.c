@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 21:03:08 by szaoual           #+#    #+#             */
-/*   Updated: 2024/11/09 21:10:16 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/11/10 11:35:15 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 static size_t	count_size(long nb)
 {
 	size_t	size;
+
 	size = 0;
 	if (nb < 0)
 	{
@@ -33,12 +34,14 @@ static size_t	count_size(long nb)
 	}
 	return (size);
 }
+
 char	*ft_itoa(int n)
 {
 	size_t	size;
 	int		is_neg;
 	long	nb;
 	char	*str;
+
 	size = count_size((long) n);
 	str = (char *) malloc(sizeof(char) * size + 1);
 	nb = n;
