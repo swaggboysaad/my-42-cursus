@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 SRC = ft_printf.c ft_printf_functions.c
 OBJ = $(SRC:.c=.o)
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 AR = ar rcs
