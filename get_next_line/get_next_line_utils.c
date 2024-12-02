@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 15:11:16 by szaoual           #+#    #+#             */
-/*   Updated: 2024/12/01 15:11:20 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/12/02 11:35:36 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,56 +70,56 @@ char	*ft_strjoin(char *left_str, char *buff)
 	return (str);
 }
 
-char	*ft_get_line(char *left_str)
+char	*ft_get_line(char *str_left)
 {
 	int		i;
 	char	*str;
 
 	i = 0;
-	if (!left_str[i])
+	if (!str_left[i])
 		return (NULL);
-	while (left_str[i] && left_str[i] != '\n')
+	while (str_left[i] && str_left[i] != '\n')
 		i++;
 	str = (char *)malloc(sizeof(char) * (i + 2));
 	if (!str)
 		return (NULL);
 	i = 0;
-	while (left_str[i] && left_str[i] != '\n')
+	while (str_left[i] && str_left[i] != '\n')
 	{
-		str[i] = left_str[i];
+		str[i] = str_left[i];
 		i++;
 	}
-	if (left_str[i] == '\n')
+	if (str_left[i] == '\n')
 	{
-		str[i] = left_str[i];
+		str[i] = str_left[i];
 		i++;
 	}
 	str[i] = '\0';
 	return (str);
 }
 
-char	*ft_new_left_str(char *left_str)
+char	*ft_new_str_left(char *str_left)
 {
 	int		i;
 	int		j;
 	char	*str;
 
 	i = 0;
-	while (left_str[i] && left_str[i] != '\n')
+	while (str_left[i] && str_left[i] != '\n')
 		i++;
-	if (!left_str[i])
+	if (!str_left[i])
 	{
-		free(left_str);
+		free(str_left);
 		return (NULL);
 	}
-	str = (char *)malloc(sizeof(char) * (ft_strlen(left_str) - i + 1));
+	str = (char *)malloc(sizeof(char) * (ft_strlen(str_left) - i + 1));
 	if (!str)
 		return (NULL);
 	i++;
 	j = 0;
-	while (left_str[i])
-		str[j++] = left_str[i++];
+	while (str_left[i])
+		str[j++] = str_left[i++];
 	str[j] = '\0';
-	free(left_str);
+	free(str_left);
 	return (str);
 }
