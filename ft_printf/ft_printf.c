@@ -55,7 +55,7 @@ int	ft_printf(const char *format, ...)
 			if (*(p + 1) == '\0')
 				return (cont);
 			cont += ft_flags(*(++p), list);
-		}
+		} 
 		else
 			cont += ft_putchar(*p);
 		p++;
