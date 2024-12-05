@@ -11,8 +11,7 @@
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
-#include <fcntl.h>
+
 static char	*ft_strchr(char *str, char c)
 {
 	int	i;
