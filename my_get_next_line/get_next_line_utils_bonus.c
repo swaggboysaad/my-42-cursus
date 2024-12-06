@@ -6,11 +6,12 @@
 /*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 16:37:48 by szaoual           #+#    #+#             */
-/*   Updated: 2024/12/05 16:43:54 by szaoual          ###   ########.fr       */
+/*   Updated: 2024/12/06 09:02:53 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
+
 int	ft_strlen(const char *str)
 {
 	int	i;
